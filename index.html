@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Wishes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <h2>Click this card</h2>
+    <div class="body">
+        <div class="birthdayCard">
+            <div class="cardFront">
+                <img src="Images\birthday-img.png" alt="birthday-img" srcset="">
+                <div class="balloons">
+                    <div class="balloonOne"></div>
+                    <div class="balloonTwo"></div>
+                    <div class="balloonThree"></div>
+                    <div class="balloonFour"></div>
+                </div>
+            </div>
+            <div class="cardInside">
+                
+                <h3 class="back">HAPPY BIRTHDAY!</h3>
+                <p contenteditable="true">Dear di,</p> 
+                <p contenteditable="true">Happy birthday!! I hope your day is filled with lots of love and laughter! May all of your birthday wishes come true.</p>
+                <p contenteditable="true" class="name">Keshav</p>
+
+                <canvas id="my-canvas">
+      
+                </canvas>
+                
+            </div>
+        </div>
+    </div>
+
+    <footer>Design & Develop by <a href="https://github.com/branded1234">Keshav</a>
+    </footer>
+
+    <script src="index.js" type="text/javascript" charset="utf-8"></script>
+
+    <script type="text/javascript" charset="utf-8">
+        var confettiSettings = { target: 'my-canvas' };
+        var confetti = new ConfettiGenerator(confettiSettings);
+        confetti.render();
+    </script>
+    
+</body>
+</html>
